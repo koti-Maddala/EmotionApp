@@ -1,0 +1,97 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #afafaf; */
+    text-align: center;
+}
+
+
+.tMargin{
+    margin-top: 5%;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+
+.myButton{
+    width: 100%;
+    background: white;
+    padding: 3.5%;
+    font-size: 20px;
+    border-radius: 5px;
+    border:1px solid #ccc;
+}
+
+.coloredBtn{
+    color: white;
+    background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(121, 2, 206), violet);
+    border:none;
+    box-shadow: 0 3px 8px 0 gray;
+
+}
+
+.title{
+    font-weight:bold;
+}
+.subtitle{
+    font-size: 14px;
+    color: #aaa;
+}
+
+.smlTxt{
+    font-size: 10px;
+    color: #bbb;
+}
+
+.iconImg{
+    width: 20px;
+    margin-right: 16px;
+}
+.mainImg{
+    width: 100%;
+}
+
+.myGradient{
+    background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(121, 2, 206), violet);
+}
+
+.myRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.myCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.myGrid{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+}
+
