@@ -52,6 +52,12 @@ body{
     box-shadow: 0 3px 8px 0 gray;
 
 }
+.floatingBtn{
+    position: fixed;
+    width: 90%;
+    bottom: 10%;
+    left: 5%;
+}
 
 .title{
     font-weight:bold;
@@ -74,24 +80,106 @@ body{
     width: 100%;
 }
 
-.myGradient{
+.Gradient{
     background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(121, 2, 206), violet);
+    color: white;
 }
 
-.myRow{
-    display: flex;
-    flex-direction: row;
-}
-
-.myCol{
+.ColFlex{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.myGrid{
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
+.RowFlex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.lb-Yellow{
+    border-left: 1px solid yellow;
+}
+.rb-Yellow{
+    border-right: 1px solid yellow;
+}
+.tb-Yellow{
+    border-top: 1px solid yellow;
+}
+.bb-Yellow{
+    border-bottom: 1px solid yellow;
+}
+
+.lb-red{
+    border-left: 1px solid red;
+}
+.rb-red{
+    border-right: 1px solid red;
+}
+.tb-red{
+    border-top: 1px solid red;
+}
+.bb-red{
+    border-bottom: 1px solid red;
+}
+
+.emtBox{
+    border: 1px solid #aaa;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.iconSize{
+    font-size: 20px;
+}
+
+.noBorder{
+    border: none;
+}
+
+.navIcon{
+    color: black;
+    padding: 10px;
+}
+
+
+.active,
+.navIcon:hover {
+    color: #7C4DFF;
+    border-top: 3px solid #7C4DFF;
+}
+
+.roundDiv{
+
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+}
+.roundDiv:hover{
+    color: white;
+    background: #7C4DFF;
+}
+
+.roundDiv:focus {
+    outline: 1px solid blue;
+}
+
+svg{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+}
