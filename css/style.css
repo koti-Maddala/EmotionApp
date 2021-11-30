@@ -13,6 +13,9 @@ body{
 .tMargin{
     margin-top: 5%;
 }
+.bMargin{
+    margin-bottom: 5%;
+}
 
 .separator {
     display: flex;
@@ -67,6 +70,13 @@ body{
     color: #aaa;
 }
 
+.cardTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px ;
+}
+ 
 .smlTxt{
     font-size: 10px;
     color: #bbb;
@@ -81,7 +91,8 @@ body{
 }
 
 .Gradient{
-    background-image: linear-gradient(to right, rgb(0, 153, 255), rgb(121, 2, 206), violet);
+    background: linear-gradient(to right, rgb(0, 153, 255), rgb(121, 2, 206), violet) no-repeat;
+
     color: white;
 }
 
@@ -102,6 +113,13 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+.listItemFlex{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .lb-Yellow{
@@ -178,8 +196,16 @@ svg path{
     fill: #7C4DFF;
 }
 .roundDiv{
-    padding: 20px;
+    padding: 25%;
     border: 1px solid #aaa;
     border-radius: 100%;
 }
-
+.roundDiv2{
+    padding: 20%;
+    border: 1px solid #aaa;
+    border-radius: 100%;
+}
+.CustomBorder {
+    border: 1px solid #7C4DFF;
+    color: #7C4DFF;
+}
