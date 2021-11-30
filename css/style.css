@@ -151,35 +151,35 @@ body{
 }
 
 .navIcon{
-    color: black;
     padding: 10px;
 }
 
-
-.active,
-.navIcon:hover {
-    color: #7C4DFF;
-    border-top: 3px solid #7C4DFF;
+#navLink path {
+    fill: #aaa;
 }
 
-.roundDiv{
+.active {
+    border-top: 3px solid #7C4DFF;
+    fill: #7C4DFF;
+}
 
+.active  path{
+    fill: #7C4DFF;
+}
+
+.bgActive{
+    background: #7C4DFF;
+}
+
+.bgActive path{
+    fill:white
+}
+svg path{
+    fill: #7C4DFF;
+}
+.roundDiv{
     padding: 20px;
     border: 1px solid #aaa;
     border-radius: 100%;
 }
-.roundDiv:hover{
-    color: white;
-    background: #7C4DFF;
-}
 
-.roundDiv:focus {
-    outline: 1px solid blue;
-}
-
-svg{
-    height: 50px;
-    width: 50px;
-    border: 1px solid #aaa;
-    border-radius: 100%;
-}

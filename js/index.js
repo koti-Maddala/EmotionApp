@@ -28,3 +28,13 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+var emtIconsHeader = document.getElementById("emtIcons");
+var icons = emtIconsHeader.getElementsByClassName("roundDiv");
+for (var i = 0; i < icons.length; i++) {
+  icons[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("bgActive");
+  current[0].className = current[0].className.replace(" bgActive", "");
+  this.className += " bgActive";
+  });
+}
