@@ -28,7 +28,6 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
-
 var emtIconsHeader = document.getElementById("emtIcons");
 var icons = emtIconsHeader.getElementsByClassName("roundDiv");
 for (var i = 0; i < icons.length; i++) {
@@ -38,14 +37,20 @@ for (var i = 0; i < icons.length; i++) {
   this.className += " bgActive";
   });
 }
-var emtIconsHeader2 = document.getElementById("emtIconsMain");
-var icons2 = emtIconsHeader2.getElementsByClassName("roundDiv2");
-for (var i = 0; i < icons.length; i++) {
-  icons2[i].addEventListener("click", function() {
+
+var recordEmtIconsHeader = document.getElementById("emtIconsMain");
+var recordIcons = recordEmtIconsHeader.getElementsByClassName("rec_roundDiv");
+for (var i = 0; i < recordIcons.length; i++) {
+  recordIcons[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("bgActive");
   current[0].className = current[0].className.replace(" bgActive", "");
   this.className += " bgActive";
   });
 }
 
-
+function changeColor() {
+  // var current = document.getElementsByClassName("bgActive");
+  // current[0].className = current[0].className.replace("bgActive", "");
+  // this.className += "bgActive";
+  // console.log("af")
+}
